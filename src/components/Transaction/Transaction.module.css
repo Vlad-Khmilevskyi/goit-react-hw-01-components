@@ -1,0 +1,53 @@
+.transaction_history {
+    width: 90%;
+    margin: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.thead {
+    height: 60px;
+    background-color: #00a8f7;
+    /* border-radius: 15px; */
+}
+
+.thead_tr {
+    border-radius: 15px;
+    background-color: #00a8f7;
+}
+
+/* .thead_th {
+    border: 2px solid rgb(90, 90, 90);
+    border-right: 2px solid rgb(90, 90, 90);
+} */
+
+/* .tbody {
+    
+    border: 2px solid rgb(90, 90, 90);
+} */
+
+.transaction_tr {
+    height: 60px;
+    /* padding: 0 10px; */
+}
+
+.transaction_td {
+    /* display: flex; */
+    text-align: center;
+    /* border: 2px solid rgb(150, 23, 23); */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Колір сирого фону */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Колір білого фону */
+}
+
+.transaction_tr tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Колір сирого фону */
+}
+
+.transaction_tr tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Колір білого фону */
+}
