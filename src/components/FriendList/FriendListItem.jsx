@@ -1,3 +1,4 @@
+// import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
 import { UserStatus } from './FriendListStatus';
 
@@ -10,3 +11,10 @@ export const FriendListItem = ({ id, isOnline, avatar, name }) => {
         </li>
     );
 };
+
+// FriendListItem.propTypes = {
+//     id: PropTypes.number.isRequired,
+//     isOnline: PropTypes.bool.isRequired,
+//     avatar: PropTypes.string.isRequired,
+//     name: PropTypes.string.isRequired,
+// };

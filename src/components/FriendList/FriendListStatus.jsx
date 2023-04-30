@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
 
 export const UserStatus = ({ isOnline }) => {
@@ -12,4 +13,8 @@ export const UserStatus = ({ isOnline }) => {
             {isOnline}
         </span>
     );
+};
+
+UserStatus.propTypes = {
+    isOnline: PropTypes.bool.isRequired,
 };
