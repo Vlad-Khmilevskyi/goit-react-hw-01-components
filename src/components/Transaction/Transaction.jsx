@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { TransactionHistory } from './TransactionHistory';
 import css from './Transaction.module.css';
 
@@ -27,8 +27,19 @@ export const Transaction = ({ transactions }) => {
 };
 
 // Transaction.propTypes = {
-//     // id: PropTypes.string.isRequired,
+//     id: PropTypes.string.isRequired,
 //     type: PropTypes.string.isRequired,
 //     amount: PropTypes.string.isRequired,
 //     currency: PropTypes.string.isRequired,
 // };
+
+Transaction.propTypes = {
+    transactions: PropTypes.arrayOf(
+        PropTypes.exact({
+            id: PropTypes.string.isRequired,
+            type: PropTypes.string.isRequired,
+            amount: PropTypes.string.isRequired,
+            currency: PropTypes.string.isRequired,
+        })
+    ),
+};

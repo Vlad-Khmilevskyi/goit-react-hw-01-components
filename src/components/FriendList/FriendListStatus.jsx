@@ -8,8 +8,12 @@ export const UserStatus = ({ isOnline }) => {
 
     const statusColor = getStatusColor();
 
+    const statusStyle = {
+        backgroundColor: statusColor,
+    };
+
     return (
-        <span className={css.status} style={{ color: statusColor }}>
+        <span className={css.status} style={statusStyle}>
             {isOnline}
         </span>
     );

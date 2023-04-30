@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import user from './UserProfile/user';
 import { Profile } from './UserProfile/Profile';
 
@@ -27,16 +25,4 @@ export const App = () => {
             <Transaction transactions={transactions} />
         </>
     );
-};
-
-Profile.propTypes = {
-    // username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
-    stats: PropTypes.exact({
-        followers: PropTypes.number.isRequired,
-        views: PropTypes.number.isRequired,
-        likes: PropTypes.number.isRequired,
-    }).isRequired,
 };
