@@ -3,10 +3,10 @@ import css from './Statistics.module.css';
 import { StatisticsItem } from './StatisticsItem';
 import { StatisticsTitle } from './StatisticsTitle';
 
-export const Statistics = ({ datas }) => {
+export const Statistics = ({ datas, title }) => {
     return (
         <section className={css.statistics}>
-            <StatisticsTitle title="Upload stats" />
+            {title && <StatisticsTitle title={title} />}
             <ul className={css.stat_list}>
                 {datas.map(({ id, label, percentage }) => (
                     <StatisticsItem
